@@ -1,0 +1,123 @@
+{
+  "components": [
+    {
+      "label": "Customer Name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1rzddkg",
+        "columns": null
+      },
+      "id": "Field_0sizm3n",
+      "key": "customerName",
+      "validate": {
+        "required": false
+      },
+      "readonly": true
+    },
+    {
+      "label": "Risk Score",
+      "values": [
+        {
+          "label": "Low",
+          "value": "value"
+        },
+        {
+          "label": "Medium",
+          "value": "value2"
+        },
+        {
+          "label": "High",
+          "value": "value3"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_1xe6xk1",
+        "columns": null
+      },
+      "id": "Field_0waoev8",
+      "key": "riskScore",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Suspicious Notes",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_16naja1",
+        "columns": null
+      },
+      "id": "Field_00nwrub",
+      "key": "suspiciousNotes",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Compliance Decision",
+      "values": [
+        {
+          "label": "Approve",
+          "value": "APPROVED"
+        },
+        {
+          "label": "Reject",
+          "value": "REJECTED"
+        },
+        {
+          "label": "Need More Verification",
+          "value": "MORE_VERIFICATION"
+        }
+      ],
+      "type": "radio",
+      "layout": {
+        "row": "Row_1t1ycfm",
+        "columns": null
+      },
+      "id": "Field_1npl8yt",
+      "key": "complianceDecision",
+      "readonly": false,
+      "disabled": false,
+      "validate": {
+        "required": true
+      },
+      "properties": {}
+    },
+    {
+      "label": "Compliance Comments",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0o30rk9",
+        "columns": null
+      },
+      "id": "Field_13512qy",
+      "key": "complianceComments",
+      "validate": {
+        "required": true,
+        "minLength": "10",
+        "maxLength": "500"
+      }
+    },
+    {
+      "label": "Submit",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_0khnszq",
+        "columns": 9
+      },
+      "id": "Field_1jn63t6",
+      "properties": {}
+    }
+  ],
+  "type": "default",
+  "id": "complianceReviewForm",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.9.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.46.1"
+  },
+  "schemaVersion": 19
+}

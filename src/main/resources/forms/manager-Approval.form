@@ -1,0 +1,165 @@
+{
+  "components": [
+    {
+      "content": "<h3>KYC Final Approval</h3>\n<p>Please review customer risk details before approving.</p>",
+      "type": "html",
+      "layout": {
+        "row": "Row_0sif62a",
+        "columns": null
+      },
+      "id": "Field_0rolt41"
+    },
+    {
+      "type": "separator",
+      "layout": {
+        "row": "Row_0wn7ksm",
+        "columns": null
+      },
+      "id": "Field_1sm2yhn"
+    },
+    {
+      "label": "Customer Information",
+      "components": [
+        {
+          "label": "Customer Name",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0ffz6lf",
+            "columns": null
+          },
+          "id": "Field_13i3ubg",
+          "key": "fullName",
+          "readonly": true
+        },
+        {
+          "label": "Risk Score",
+          "type": "number",
+          "layout": {
+            "row": "Row_0r1h7n6",
+            "columns": null
+          },
+          "id": "Field_0u1nuyj",
+          "key": "riskScore",
+          "readonly": true
+        },
+        {
+          "label": "Risk Level",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0r1h7n6",
+            "columns": null
+          },
+          "id": "Field_0imcd01",
+          "key": "riskLevel",
+          "readonly": true
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_0pi6fkm",
+        "columns": null
+      },
+      "id": "Field_1e2u8ev"
+    },
+    {
+      "type": "separator",
+      "layout": {
+        "row": "Row_0sc22ep",
+        "columns": null
+      },
+      "id": "Field_11hmfha"
+    },
+    {
+      "label": "Review Details",
+      "components": [
+        {
+          "label": "Suspisious Notes",
+          "type": "textarea",
+          "layout": {
+            "row": "Row_1yqni6s",
+            "columns": null
+          },
+          "id": "Field_0z832fy",
+          "key": "textarea_kpgph"
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_0eu0xt7",
+        "columns": null
+      },
+      "id": "Field_1h97wgo"
+    },
+    {
+      "type": "separator",
+      "layout": {
+        "row": "Row_1ssf22e",
+        "columns": null
+      },
+      "id": "Field_0022w78"
+    },
+    {
+      "label": "Approval Decision",
+      "components": [
+        {
+          "label": "Approve/Reject",
+          "values": [
+            {
+              "label": "Yes",
+              "value": "true"
+            },
+            {
+              "label": "No",
+              "value": "false"
+            }
+          ],
+          "type": "radio",
+          "layout": {
+            "row": "Row_1mpar3p",
+            "columns": null
+          },
+          "id": "Field_0bo5g10",
+          "key": "kycApproved"
+        },
+        {
+          "label": "Manager Comments",
+          "type": "textarea",
+          "layout": {
+            "row": "Row_17y29rd",
+            "columns": 16
+          },
+          "id": "Field_1cepkyi",
+          "key": "managerComments"
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_1n42gvz",
+        "columns": null
+      },
+      "id": "Field_0a6dgg8"
+    },
+    {
+      "label": "Submit Approval",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_0fafac8",
+        "columns": null
+      },
+      "id": "Field_1003rlc"
+    }
+  ],
+  "type": "default",
+  "id": "managerApprovalForm",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.9.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.46.1"
+  },
+  "schemaVersion": 19
+}
