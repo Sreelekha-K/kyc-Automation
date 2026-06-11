@@ -6,3 +6,11 @@ camunda:
     mode: self-managed
     grpc-address: http://localhost:26500
     rest-address: http://localhost:8080
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: kyc-worker-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer

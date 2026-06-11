@@ -8,7 +8,7 @@
         "columns": null
       },
       "id": "Field_0sizm3n",
-      "key": "customerName",
+      "key": "fullName",
       "validate": {
         "required": false
       },
@@ -16,30 +16,13 @@
     },
     {
       "label": "Risk Score",
-      "values": [
-        {
-          "label": "Low",
-          "value": "value"
-        },
-        {
-          "label": "Medium",
-          "value": "value2"
-        },
-        {
-          "label": "High",
-          "value": "value3"
-        }
-      ],
-      "type": "select",
+      "type": "textfield",
       "layout": {
-        "row": "Row_1xe6xk1",
+        "row": "Row_0u538lq",
         "columns": null
       },
-      "id": "Field_0waoev8",
-      "key": "riskScore",
-      "validate": {
-        "required": true
-      }
+      "id": "Field_09nk7ly",
+      "key": "riskScore"
     },
     {
       "label": "Suspicious Notes",
@@ -64,10 +47,6 @@
         {
           "label": "Reject",
           "value": "REJECTED"
-        },
-        {
-          "label": "Need More Verification",
-          "value": "MORE_VERIFICATION"
         }
       ],
       "type": "radio",

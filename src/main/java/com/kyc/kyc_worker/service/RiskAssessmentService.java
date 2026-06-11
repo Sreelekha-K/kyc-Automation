@@ -13,6 +13,7 @@ public class RiskAssessmentService {
         String email = (String) variables.get("emailAddress");
         String phone = (String) variables.get("phoneNumber");
         String aadhaar = (String) variables.get("aadhaarNumber");
+        String name =(String) variables.get("fullName");
 
         int riskScore = 0;
 
@@ -25,6 +26,9 @@ public class RiskAssessmentService {
 
         if (email != null && email.contains("test")) {
             riskScore += 15;
+        }
+        if (name != null && name.contains("test")) {
+            riskScore += 20;
         }
 
         if (phone == null || !phone.matches("\\+91[0-9]{10}")) {
